@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nowak Kacper</title>
+    <link rel="icon" type="image/png/jpeg" href="./assets/fav1.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <div class="blackbox"></div>
+    <nav id="desktop-nav">
+      <div class="logo">Kacper Nowak</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">O mnie</a></li>
+          <li><a href="#experience">Doświadczenie</a></li>
+          <li><a href="#projects">Projekty</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+          <button id="loadButton" class="btn-color-3"
+          onclick="switchToPage('./index.html')">
+              English
+          </button>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Kacper</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">O mnie</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Doświadczenie</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projekty</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Kontakt</a></li>
+          <button id="loadButton"
+                class="btn-color-5"
+                onclick="window.location.href='index.html'">
+              English
+          </button>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Kacper Nowak profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Cześć, nazywam się</p>
+        <h1 class="title">Kacper Nowak</h1>
+        <p class="section__text__p2">Backend Developer oraz student Teleinformatyki</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Kacper Nowak - CV.pdf')"
+          >
+            Pobierz CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Kontakt
+          </button>
+        </div>
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/KacperNowakCode'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Zapoznaj się ze mną</p>
+      <h1 class="title">Krótko o mnie</h1>
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Doświadczenie</h3>
+              <p>1 rok <br />Software Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Edukacja</h3>
+              <p>Teleinformatyka<br />Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie</p>
+            </div>
+          </div>
+          <div class="text-container" style="font-size: 22px;">
+            <p>Nazywam się Kacper Nowak, jestem aspirującym programistą Javy oraz studentem Teleinformatyki na AGH w Krakowie,
+                pasjonuję się tworzeniem oprogramowania oraz sieciami komputerowymi. Aktywnie działam w kole naukowym SKN Telephoners
+                oraz pracuję jako trener programowania dla dzieci, ucząc
+                C++. Mając solidne podstawy w zakresie Javy, Spring Boot, React i protokołów sieciowych,
+                lubię tworzyć wydajne rozwiązania i stale poszerzać swoją wiedzę. Uzyskałem
+                certyfikaty takie jak CCNA 2 czy Data Structures + Algorithms oraz zakwalifikowałem się do grupy "Prymusi AGH”
+                - Kandydaci, którzy znaleźli się wśród 5% najlepszych na liście rankingowej.
+            </p>
+        </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Poznaj moje</p>
+      <h1 class="title">Doświadczenie</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Spring Boot</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Kontrola wersji & Narzędzia</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Linux, Bash</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Postman, JUnit, Mockito</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NPM, Yarn</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Sieci komputerowe</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TCP/IP, DNS, DHCP</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>RIP, OSPF, BGP</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Wireshark</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PuTTY</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Moje najnowsze</p>
+      <h1 class="title">Projekty</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ContactSphereSS.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">ContactSphere RESTful-API</h2>
+            <h5>Aplikacja internetowa Full-stack. Aplikacja pozwala użytkownikom tworzyć, edytować i usuwać kontakty, a także wysyłać grupowe wiadomości oraz e-maile.</h5>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/KacperNowakCode/ContactSphere-RESTful-API'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/web-crawler.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">CrawlMaster</h2>
+            <h5>CrawlMaster to wysokowydajny web-crawler
+              zbudowany w Javie, przeznaczony do rekurencyjnego przeglądania stron internetowych i wydobywania linków.
+               Automatyzuje proces skanowania stron internetowych,
+              podążanie za linkami i zbierania informacji.</h5>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/KacperNowakCode/CrawlMaster'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/WeatherAppSS.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">OOP Weather</h2>
+            <h5>Aplikacja Full-stack dostarczająca dane pogodowe w czasie rzeczywistym.
+              Składa się z backendu zbudowanego przy użyciu Javy, Spring Boot oraz frontendu stworzonego przy użyciu
+              React za pomocą TypeScript i Vite.</h5>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/KacperNowakCode/University-Project-Frontend'"
+              >
+                Github - Frontend
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/KacperNowakCode/Java-University-Project'"
+              >
+                Github - Backend
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Bądźmy w kontakcie!</p>
+      <h1 class="title">Skontaktuj się ze mną</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:kacper.nowak1592@gmail.com">kacper.nowak1592@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone-icon.png"
+            alt="phone icon"
+            class="icon contact-icon"
+          />
+          <p><a href="tel:+48669927115">669 927 115</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#experience">Doświadczenie</a></li>
+            <li><a href="#projects">Projekty</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>&#169; 2025 Kacper Nowak</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
